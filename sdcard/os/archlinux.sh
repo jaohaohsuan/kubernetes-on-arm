@@ -90,8 +90,8 @@ EOF
 # Download the OS, and redirect the tar warnings to the log
 generaldownload(){
 	# Download, redirect stderr (all errors) to stdout, which in turn is appended to a log file
-	curl -I $OSBASEURL/os/ArchLinuxARM-${MACHINENAME}-latest.tar.gz
-	curl -sSL -k $OSBASEURL/os/ArchLinuxARM-${MACHINENAME}-latest.tar.gz | tar -xz -C $ROOT >> $LOGFILE 2>&1
+	curl -I $OSBASEURL/ArchLinuxARM-${MACHINENAME}-latest.tar.gz
+	curl -sSL -k $OSBASEURL/ArchLinuxARM-${MACHINENAME}-latest.tar.gz | tar -xz -C $ROOT >> $LOGFILE 2>&1
 
 	sync
 

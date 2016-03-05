@@ -119,7 +119,7 @@ LOGFILE=/tmp/kubernetes-on-arm.log
 MACHINENAME=$2
 OSNAME=$3
 ROOTFSNAME=$4
-OSBASEURL=${5:-http://archlinuxarm.org}
+OSBASEURL=${5:-http://archlinuxarm.org/os}
 
 
 if [[ -z $QUIET || $QUIET == 0 ]]; then
